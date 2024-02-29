@@ -65,7 +65,7 @@ body {
 }
 
 
-//* Media Query para hacer el diseño responsive en dispositivos móviles */
+/* Media Query para hacer el diseño responsive en dispositivos móviles */
 @media only screen and (max-width: 768px) {
     .timeline {
         justify-content: center; /* Centrar los cuadros en la pantalla */
@@ -84,7 +84,9 @@ body {
 
     /* Ajustar el tamaño de los videos de YouTube */
     .event iframe {
-        width: 100%; /* Ancho completo */
+        width: calc(100% - 40px); /* Ancho máximo igual al del evento cuadro */
+        max-width: 560px; /* Máximo ancho permitido para los videos de YouTube */
         height: auto; /* Altura automática */
+        margin: 0 auto; /* Centrar el video horizontalmente */
     }
 }
