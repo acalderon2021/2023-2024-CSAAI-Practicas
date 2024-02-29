@@ -86,7 +86,6 @@ body {
     /* Ajustar el tamaño de los videos de YouTube */
     .event iframe {
         width: 80%; /* Ancho máximo igual al del evento cuadro */
-        max-width: 450px; /* Máximo ancho permitido para los videos de YouTube */
         height: auto; /* Altura automática */
         margin: 0 auto; /* Centrar el video horizontalmente */
     }
