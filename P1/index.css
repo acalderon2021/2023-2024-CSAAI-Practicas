@@ -106,3 +106,21 @@ iframe {
 .right-column a:active {
     color: #ff6666; /* Color rojo claro */
 }
+
+/* Media Query para hacer el diseño responsive en dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambiar la dirección a columna */
+        align-items: center; /* Centrar los elementos */
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%; /* Ancho completo en dispositivos móviles */
+        margin-bottom: 20px; /* Espacio entre las columnas */
+    }
+
+    .left-column img {
+        margin-bottom: 20px; /* Más espacio entre la imagen y el texto */
+    }
+}
