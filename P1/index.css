@@ -108,19 +108,20 @@ iframe {
 }
 
 /* Media Query para hacer el diseño responsive en dispositivos móviles */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 750px) {
     .container {
-        flex-direction: column; /* Cambiar la dirección a columna */
-        align-items: center; /* Centrar los elementos */
+        flex-direction: column; /* Cambiar a disposición en columna */
+        align-items: center; /* Centrar contenido verticalmente */
     }
 
     .left-column,
     .right-column {
-        width: 100%; /* Ancho completo en dispositivos móviles */
-        margin-bottom: 20px; /* Espacio entre las columnas */
+        width: 90%; /* Ancho completo */
+        max-width: none; /* Eliminar máximo ancho */
     }
 
-    .left-column img {
-        margin-bottom: 20px; /* Más espacio entre la imagen y el texto */
+    .left-column,
+    .right-column {
+        margin-bottom: 20px; /* Espacio entre columnas */
     }
 }

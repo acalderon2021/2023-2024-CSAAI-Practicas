@@ -66,7 +66,7 @@ body {
 
 
 /* Media Query para hacer el diseño responsive en dispositivos móviles */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 750px) {
     .timeline {
         justify-content: center; /* Centrar los cuadros en la pantalla */
     }
