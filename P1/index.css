@@ -41,6 +41,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     text-align: left; /* Justificación al margen de la izquierda */
+    margin-top: 7%; /* Ajuste para alinear a la mitad de la columna izquierda */
 }
 
 .left-column h2,
