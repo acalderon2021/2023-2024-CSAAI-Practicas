@@ -14,20 +14,38 @@ body {
     padding: 50px 0;
 }
 
-.left-column, .right-column {
-    width: 45%;
+.left-column {
+    width: 35%; /* La columna izquierda es un poco más pequeña que la derecha */
+    background-color: #575757; /* Fondo gris claro */
+    color: #000; /* Texto negro */
     padding: 20px;
-    background-color: rgba(48, 197, 18, 0); 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left; /* Justificación al margen de la izquierda */
 }
 
 .left-column img {
+    display: block;
+    margin: 0 auto; /* Centrar la imagen */
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Más separación entre la imagen y el texto */
+}
+
+.right-column {
+    width: 65%; /* La columna derecha ocupa el restante */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: left; /* Justificación al margen de la izquierda */
+}
+
+.left-column h2,
+.right-column h2 {
+    text-align: center; /* Justificación central para los títulos */
 }
 
 h2 {
@@ -46,7 +64,7 @@ iframe {
 
 .scooter-image {
     float: left;
-    margin-right: 10px;
+    margin-right: 50px; /* Aumentar el margen entre la imagen y la lista */
     width: 150px;
     border-radius: 5px;
 }
@@ -54,8 +72,37 @@ iframe {
 .scooter-components {
     list-style-type: none;
     padding: 0;
+    text-align: center; /* Justificación central */
 }
 
 .scooter-components li {
-    margin-bottom: 5px;
+    margin-bottom: 10px; /* Aumentar el espacio entre los elementos de la lista */
+    text-align: left; /* Ajustar el texto a la izquierda */
+}
+
+.sponsor-logos {
+    text-align: center; /* Justificación al centro */
+}
+
+.logo {
+    width: 100px; /* Tamaño igual para todos los logos */
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.right-column a {
+    color: #ff6666; /* Color rojo claro */
+    text-decoration: none;
+}
+
+.right-column a:hover {
+    text-decoration: underline; /* Subrayar enlace al pasar el mouse */
+}
+
+.right-column a:visited {
+    color: #ff6666; /* Color rojo claro */
+}
+
+.right-column a:active {
+    color: #ff6666; /* Color rojo claro */
 }
