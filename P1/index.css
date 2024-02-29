@@ -7,6 +7,13 @@ body {
     background-repeat: no-repeat;
 }
 
+.attention-banner {
+    background-color: #ff0000; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 10px 0; 
+}
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -15,38 +22,38 @@ body {
 }
 
 .left-column {
-    width: 35%; /* La columna izquierda es un poco más pequeña que la derecha */
-    background-color: #575757; /* Fondo gris claro */
-    color: #000; /* Texto negro */
+    width: 35%; 
+    background-color: #575757; 
+    color: #000; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Justificación al margen de la izquierda */
+    text-align: left; 
 }
 
 .left-column img {
     display: block;
-    margin: 0 auto; /* Centrar la imagen */
+    margin: 0 auto; 
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 30px; /* Más separación entre la imagen y el texto */
+    margin-bottom: 30px; 
 }
 
 .right-column {
-    width: 65%; /* La columna derecha ocupa el restante */
-    background-color: #000; /* Fondo negro */
-    color: #fff; /* Texto blanco */
+    width: 65%; 
+    background-color: #000; 
+    color: #fff; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    text-align: left; /* Justificación al margen de la izquierda */
-    margin-top: 7%; /* Ajuste para alinear a la mitad de la columna izquierda */
+    text-align: left; 
+    margin-top: 7%; 
 }
 
 .left-column h2,
 .right-column h2 {
-    text-align: center; /* Justificación central para los títulos */
+    text-align: center; 
 }
 
 h2 {
@@ -65,7 +72,7 @@ iframe {
 
 .scooter-image {
     float: left;
-    margin-right: 50px; /* Aumentar el margen entre la imagen y la lista */
+    margin-right: 50px; 
     width: 150px;
     border-radius: 5px;
 }
@@ -73,56 +80,56 @@ iframe {
 .scooter-components {
     list-style-type: none;
     padding: 0;
-    text-align: center; /* Justificación central */
+    text-align: center; 
 }
 
 .scooter-components li {
-    margin-bottom: 10px; /* Aumentar el espacio entre los elementos de la lista */
-    text-align: left; /* Ajustar el texto a la izquierda */
+    margin-bottom: 10px; 
+    text-align: left; 
 }
 
 .sponsor-logos {
-    text-align: center; /* Justificación al centro */
+    text-align: center;
 }
 
 .logo {
-    width: 100px; /* Tamaño igual para todos los logos */
+    width: 100px; 
     margin-right: 10px;
     border-radius: 5px;
 }
 
 .right-column a {
-    color: #ff6666; /* Color rojo claro */
+    color: #ff6666; 
     text-decoration: none;
 }
 
 .right-column a:hover {
-    text-decoration: underline; /* Subrayar enlace al pasar el mouse */
+    text-decoration: underline; 
 }
 
 .right-column a:visited {
-    color: #ff6666; /* Color rojo claro */
+    color: #ff6666; 
 }
 
 .right-column a:active {
-    color: #ff6666; /* Color rojo claro */
+    color: #ff6666; 
 }
 
-/* Media Query para hacer el diseño responsive en dispositivos móviles */
+/* Media Query para hacer el diseño responsive en móviles */
 @media only screen and (max-width: 750px) {
     .container {
-        flex-direction: column; /* Cambiar a disposición en columna */
-        align-items: center; /* Centrar contenido verticalmente */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .left-column,
     .right-column {
-        width: 90%; /* Ancho completo */
-        max-width: none; /* Eliminar máximo ancho */
+        width: 90%; 
+        max-width: none; 
     }
 
     .left-column,
     .right-column {
-        margin-bottom: 20px; /* Espacio entre columnas */
+        margin-bottom: 20px;
     }
 }
