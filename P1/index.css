@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 0;
+}
+
+.left-column, .right-column {
+    width: 45%;
+    padding: 20px;
+    background-color: rgba(48, 197, 18, 0); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.left-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.right-column ul {
+    text-align: left; 
+}
+
+.scooter-image {
+    float: left;
+    margin-right: 10px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.scooter-components {
+    list-style-type: none;
+    padding: 0;
+}
+
+.scooter-components li {
+    margin-bottom: 5px;
+}
