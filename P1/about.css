@@ -65,16 +65,26 @@ body {
 }
 
 
-/* Media Query para hacer el diseño responsive en dispositivos móviles */
+//* Media Query para hacer el diseño responsive en dispositivos móviles */
 @media only screen and (max-width: 768px) {
+    .timeline {
+        justify-content: center; /* Centrar los cuadros en la pantalla */
+    }
+
     .event {
-        width: 100%;
+        width: calc(100% - 20px); /* Ancho completo */
     }
 
     .signature-pieces img,
     .current-state img {
         width: 100%;
-        margin: 5px 0;
+        margin: 5px auto; /* Centrar las imágenes */
         border-radius: 5px;
+    }
+
+    /* Ajustar el tamaño de los videos de YouTube */
+    .event iframe {
+        width: 100%; /* Ancho completo */
+        height: auto; /* Altura automática */
     }
 }
