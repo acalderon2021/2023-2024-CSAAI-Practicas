@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.event {
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000;
+    background-color: rgb(233, 41, 41); /* Cambiar el fondo a rojo */
+}
+
+.event-content {
+    text-align: center;
+}
+
+.event-content h2 {
+    margin-top: 0;
+}
+
+.signature-pieces img {
+    width: 45%;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.current-state img {
+    width: 30%;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.right {
+    margin-left: auto;
+}
