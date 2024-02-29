@@ -17,7 +17,23 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #000;
-    background-color: rgb(233, 41, 41); /* Cambiar el fondo a rojo */
+}
+
+.white {
+    background-color: rgb(255, 255, 255);
+}
+
+.grey1{
+    background-color: rgb(139, 138, 138);
+}
+
+.grey2 {
+    background-color: rgb(48, 47, 47);
+}
+
+.black {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
 }
 
 .event-content {
@@ -42,4 +58,18 @@ body {
 
 .right {
     margin-left: auto;
+}
+
+/* Media Query para hacer el diseño responsive en dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .event {
+        width: 100%;
+    }
+
+    .signature-pieces img,
+    .current-state img {
+        width: 100%;
+        margin: 5px 0;
+        border-radius: 5px;
+    }
 }
