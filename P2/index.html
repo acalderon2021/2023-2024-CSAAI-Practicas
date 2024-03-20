@@ -3,32 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desactiva la bomba</title>
+    <title>Adivina la Clave</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="crono.js"></script>
-    <script src="script.js"></script>
 </head>
 <body>
     <header class="recomendacion">
-        <h1>Se recomienda activar el volumen del dispositivo para una experiencia más inmersiva...</h1>
+        <h1>Te recomiendo activar el volumen del dispositivo para una experiencia más inmersiva...</h1>
     </header>
-
     <div class="container">
         <div class="intro">
             <h2>¡Oh cuidado!</h2>
             <p>Hay una bomba activa, ¡solo tendrás 5 segundos para tratar de desactivarla!</p>
         </div>
-
-        <div class="pasos">
-            <h2>Para poder desactivar la bomba:</h2>
-            <ol>
-                <li>Pulsa el botón START o cualquier número para comenzar.</li>
-                <li>El cronómetro comenzará a funcionar y tendrás 5 segundos para adivinar la clave secreta, con intentos ilimitados.</li>
-                <li>Si pasan 5 segundos, la bomba explotará.</li>
-                <li>Como esto es un juego, pulsa el botón RESET al final de cada intento de desactivación para volver a desactivar.</li>
-            </ol>
-        </div>
-
         <div class="bomba">
             <div id="contador">0:0:0</div>
             <div id="clave">
@@ -52,6 +38,18 @@
                 <button id="reset">Reset</button>
             </div>
         </div>
+        <div class="pasos">
+            <h2>Para poder desactivar la bomba:</h2>
+            <ol>
+                <li>Pulsa el botón START o cualquier número para comenzar.</li>
+                <li>El cronómetro comenzará a funcionar y tendrás 5 segundos para adivinar la clave secreta, con intentos ilimitados.</li>
+                <li>Si pasan 5 segundos, la bomba explotará.</li>
+                <li>Como esto es un juego, pulsa el botón RESET al final de cada intento de desactivación para volver a jugar.</li>
+            </ol>
+        </div>
     </div>
+
+    <script src="crono.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
