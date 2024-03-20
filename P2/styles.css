@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: stretch; 
+}
 
 .bomba, .intro, .pasos {
     flex: 1;
@@ -101,7 +102,7 @@ button#reset {
 }
 
 .pasos ol {
-    text-align: left; 
+    text-align: left;
 }
 
 
@@ -132,18 +133,17 @@ button#reset {
 
 @media only screen and (max-width: 768px) {
     body {
-        padding-top: 50px; 
+        padding-top: 550px;
+        font-size: 10px;
     }
 
     .container {
         flex-direction: column;
+        align-items: center;
     }
 
     .bomba, .intro, .pasos {
-        width: 100%;
-    }
-    
-    .intro:first-child {
-        margin-top: 50px;
+        width: calc(100% - 20px); /* Resta 20px para tener margen a los lados */
+        margin: 10px 0; /* Espacio entre los elementos */
     }
 }
