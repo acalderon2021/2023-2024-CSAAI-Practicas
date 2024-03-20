@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
             generarClaveSecreta();
         }
     
-        // Buscamos todas las posiciones donde el número coincide con la clave
+        // Buscar todas las posiciones donde el número coincide con la clave
         let claveAdivinadaCompleta = false;
         for (let i = 0; i < claveSecreta.length; i++) {
             if (claveSecreta[i] == parseInt(numero)) {
@@ -64,23 +64,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
     
-
-    // Manejadores de eventos para los botones de números
     botonesNumeros.forEach(button => {
         button.addEventListener('click', clickNumero);
     });
 
-    // Manejador de eventos para el botón Start
     startButton.addEventListener('click', () => {
         crono.start();
     });
 
-    // Manejador de eventos para el botón Stop
     stopButton.addEventListener('click', () => {
         crono.stop();
     });
 
-    // Manejador de eventos para el botón Reset
     resetButton.addEventListener('click', () => {
         crono.stop();
         crono.reset();

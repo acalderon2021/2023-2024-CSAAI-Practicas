@@ -10,11 +10,10 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Para que todos los elementos tengan la misma altura */
-}
+    align-items: stretch; 
 
 .bomba, .intro, .pasos {
-    flex: 1; /* Para que ocupen el mismo espacio y tengan la misma altura */
+    flex: 1;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -41,7 +40,7 @@ body {
     justify-items: center;
     margin-right: 10px;
     margin-bottom: 15px;
-    line-height: 65px; /* Ajustar el centrado vertical */
+    line-height: 65px; 
 }
 
 #contador {
@@ -98,11 +97,11 @@ button#reset {
 }
 
 .pasos h2 {
-    text-align: center; /* Centrar el texto del encabezado */
+    text-align: center; 
 }
 
 .pasos ol {
-    text-align: left; /* Justificar la lista a la izquierda */
+    text-align: left; 
 }
 
 
@@ -132,10 +131,19 @@ button#reset {
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        padding-top: 50px; 
+    }
+
     .container {
         flex-direction: column;
     }
+
     .bomba, .intro, .pasos {
         width: 100%;
+    }
+    
+    .intro:first-child {
+        margin-top: 50px;
     }
 }
