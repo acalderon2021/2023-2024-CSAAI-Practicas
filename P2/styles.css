@@ -140,8 +140,7 @@ button#reset {
     .intro,
     .pasos,
     .bomba {
-        width: calc(100% - 20px); /* Ocupar todo el ancho de la pantalla con un pequeño margen */
-        margin: 10px;
+        margin-bottom: 20px;
     }
 
     .bomba {
