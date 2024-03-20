@@ -162,9 +162,3 @@ button#reset {
         text-align: center;
         padding: 10px;
     }
-
-    #aviso-texto {
-        margin: 0;
-        font-size: 20px;
-    }
-}
