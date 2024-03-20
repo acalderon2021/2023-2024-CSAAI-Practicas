@@ -13,7 +13,7 @@ body {
     align-items: stretch; /* Para que todos los elementos tengan la misma altura */
 }
 
-.calculadora, .intro, .pasos {
+.bomba, .intro, .pasos {
     flex: 1; /* Para que ocupen el mismo espacio y tengan la misma altura */
     margin: 10px;
     display: flex;
@@ -21,7 +21,7 @@ body {
     align-items: center;
 }
 
-.calculadora {
+.bomba {
     background-color: #d0d0d0;
     border: 2px solid black;
     border-radius: 10px;
@@ -139,11 +139,12 @@ button#reset {
     
     .intro,
     .pasos,
-    .calculadora {
-        margin-bottom: 20px;
+    .bomba {
+        width: calc(100% - 20px); /* Ocupar todo el ancho de la pantalla con un pequeño margen */
+        margin: 10px;
     }
 
-    .calculadora {
+    .bomba {
         border: 2px solid black;
         border-radius: 10px;
         padding: 10px;
