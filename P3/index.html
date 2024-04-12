@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dardos parabólicos</title>
+
+    <!-- crono -->
+    <script src="crono.js"></script>
+
+    <!-- Hoja de estilo -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Código javascript -->
+    <script src="index.js" defer></script>
+
+</head>
+<body>
+<div>
+    <h1>¿Echamos una partida de dardos?</h1>
+    <canvas id="campotiro"></canvas> <!-- Campo de tiro -->
+    <br>
+    <p id="crono">0:0:0</p>
+    <p>Ángulo del tiro (respecto eje horizontal):</p>
+    <p> <input type="range" id="angulo"></p>
+    <p id="sliderAngulo"></p>
+    <p>Velocidad del tiro:</p>
+    <p> <input type="range" id="velocidad"></p>
+    <p id="sliderVelocidad"></p>
+    <input type="button" id="btnLanzar" value="Lanzar el dardo">
+    <input type="button" id="btnReiniciar" value="Reiniciar">
+    <p id="mensaje"></p>
+</div>
+
+</body>
+</html>
